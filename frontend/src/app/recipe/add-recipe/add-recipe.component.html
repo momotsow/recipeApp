@@ -1,0 +1,29 @@
+<div class="addRecipe-form">
+  <form [formGroup]="addRecipeForm" (ngSubmit)="submitForm()" novalidate>
+    <div class="form-group">
+        <input type="text" name="title" formControlName="title" placeholder="Recipe title" required/>
+        <span class="input-error" *ngIf="addRecipeForm.get('title').invalid && addRecipeForm.get('title').touched">Cannot be empty</span>
+    </div>
+
+      <div class="form-group">
+          <textarea type="text" name="ingredients" class="form-input form-block" formControlName="ingredients" placeholder="Add Ingredients"></textarea>
+          <span class="input-error" *ngIf="addRecipeForm.get('ingredients').invalid && addRecipeForm.get('ingredients').touched">Fill in the Ingredients</span>
+
+      </div>
+
+      <div class="form-group">
+        <textarea type="text" name="description" class="form-input form-block" formControlName="description" placeholder="Add Description"></textarea>
+        <span class="input-error" *ngIf="addRecipeForm.get('description').invalid && addRecipeForm.get('description').touched">Fill in the description</span>
+
+      </div>
+      <div class="form-group">
+        <input type="file" formControlName="image" name="image" (change)="getImage($event)"/>
+
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Add Recipe"/>
+    </div>
+  </form>
+
+</div>

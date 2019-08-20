@@ -1,0 +1,53 @@
+.contact {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    // margin-top: 80%;
+}
+
+footer {
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.flex-container {
+    // display: -webkit-flex;
+    display: flex;
+    // -webkit-flex-direction: row;
+    flex-direction: row;
+    width: 100vw;
+    color: white;
+    overflow: none;
+}
+
+form {
+    border: none;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    min-width: 200px;
+}
+
+.contact-digits {
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+.phone {
+    margin-right: 20px;
+}
+
+a {
+    cursor: pointer;
+}

@@ -1,0 +1,192 @@
+// .header {
+//     background: url("../img/dessert.jpg");
+//     background-size: cover;
+//     width: 100%;
+//     height: 550px;
+//     position: relative;
+  
+//     & .nav-bar {
+//         width: calc(100% - 10px);
+//         margin: 0 auto;
+  
+//         @media only screen and (min-width:1200px) {
+//             width: 1170px;
+//         }
+  
+//         & .nav-brand {
+//             margin-top: 50px;
+//             float: left;
+//             outline: none;
+//             cursor: pointer;
+  
+//             @media only screen and (min-width:1200px) {
+//                 margin-left: 0;
+//             }
+  
+//             & img {
+//                 width: 20px;
+//                 height: auto;
+//             }
+//         }
+  
+//         & .mobile-nav-button {
+//             float: right;
+//             margin-top: 58px;
+//             cursor: pointer;
+  
+//             @media only screen and (min-width:1200px) {
+//                 display: none;
+//             }
+  
+//             & .menu {
+//                 font-weight: 700;
+//                 color: black;
+//                 float: left;
+                
+//             }
+  
+//             & .nav-burger {
+//                 float: left;
+//                 width: 20px;
+//                 height: 30px;
+//                 margin-left: 13px;
+//                 margin-top: 3px;
+//                 padding-right: 20px;
+  
+//                 & span {
+//                     height: 3px;
+//                     width: 100%;
+//                     background: black;
+//                     margin-bottom: 3px;
+//                     display: block;
+//                 }
+//             }
+//         }
+  
+//         & .main-nav {
+//             position: absolute;
+//             background: white;
+//             width: 100%;
+//             height: calc(100vh);
+//             z-index: 10;
+//             right: -100%;
+//             // @include transition(all .3s ease);
+  
+//         & .navi {
+//           position: absolute;
+//           top: 30;
+//           right: 30;
+//           font: 2rem;
+//           float: right;
+//           cursor: pointer;
+  
+//         }
+//             @media only screen and (min-width:1200px) {
+//                 position: relative;
+//                 right: 0;
+//                 background: transparent;
+//                 float: right;
+//                 width: auto;
+//                 height: auto;
+//             }
+  
+//             &.active {
+//                 right: 0;
+//             }
+  
+//             .close-nav {
+//               @media only screen and (min-width:1200px) {
+//                     display: none;
+//                 }
+//             }
+  
+//             & .mobile-nav-heading {
+//                 margin: 50px 0 0 70px;
+//                 font-size: 3rem;
+  
+//                 @media only screen and (min-width:1200px) {
+//                     display: none;
+//                 }
+//             }
+  
+//             & .nav-items {
+//                 list-style: none;
+//                 margin: 0;
+//                 padding: 50px 0 0 70px;
+  
+//                 @media only screen and (min-width:1200px) {
+//                     display: block;
+//                     padding: 0;
+//                 }
+  
+//                 & li {
+//                     display: block;
+  
+//                     @media only screen and (min-width:1200px) {
+//                         display: inline-block;
+//                     }
+  
+//                     & a {
+//                         color: black;
+//                         text-decoration: none;
+//                         display: block;
+//                         font-size: 2rem;
+  
+//                         @media only screen and (min-width:1200px) {
+//                             color: black;
+//                             display: inline-block;
+//                             font-size: 1rem;
+//                             padding: 60px 15px;
+//                         }
+  
+//                         &.active {
+//                             &:after {
+//                                 content: '';
+//                                 width: 100%;
+//                                 height: 1px;
+//                                 background: red;
+//                                 display: block;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+  
+//     & .header-content {
+//         position: absolute;
+//         max-width: calc(100% - 80px);
+//         top: 50%;
+//         left: 0;
+//         right: 0;
+//         margin: auto;
+//         transform: translateY(-50%);
+  
+//         @media only screen and (min-width:1200px) {
+//             max-width: 1170px;
+//         }
+  
+//         & h1 {
+//             font-size: 45px;
+//         }
+  
+//         & p {
+//             font-size: 16px;
+//         }
+//         & button {
+//           -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+//       -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+//       box-shadow: inset 0px 1px 0px 0px #45D6D6;
+//       background-color: #2CBBBB;
+//       border: 1px solid #27A0A0;
+//       display: inline-block;
+//       cursor: pointer;
+//       color: #FFFFFF;
+//       font-size: 14px;
+//       padding: 8px 18px;
+//       text-decoration: none;
+//       text-transform: uppercase;
+//         }
+//     }
+//   }

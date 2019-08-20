@@ -1,0 +1,90 @@
+<div class="contact-form">
+  <form [formGroup]="contactForm" (ngSubmit)="submitForm()" novalidate>
+    <div class="form-group">
+      <input
+        type="text"
+        name="name"
+        formControlName="name"
+        placeholder="Full Name"
+        required
+      />
+    </div>
+    <div
+      *ngIf="
+        contactForm.controls['name'].invalid &&
+        (contactForm.controls['name'].dirty ||
+          contactForm.controls['name'].touched)
+      "
+      class="alert alert-danger"
+    >
+      <div *ngIf="contactForm.controls['name'].errors.required">
+        Fill-in your name.
+      </div>
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        name="phoneNumber"
+        formControlName="phoneNumber"
+        placeholder="Phone Number"
+      />
+      <span
+        class="input-error"
+        *ngIf="
+          contactForm.get('phoneNumber').invalid &&
+          contactForm.get('phoneNumber').touched
+        "
+        >invalid Number</span
+      >
+    </div>
+    <div
+      *ngIf="
+        contactForm.controls['phoneNumber'].invalid &&
+        (contactForm.controls['phoneNumber'].dirty ||
+          contactForm.controls['phoneNumber'].touched)
+      "
+      class="alert alert-danger"
+    >
+      <div *ngIf="contactForm.controls['phoneNumber'].errors.required">
+        Number is required.
+      </div>
+    </div>
+    <div class="form-group">
+      <input
+        type="email"
+        name="email"
+        formControlName="email"
+        placeholder="Email"
+        required
+      />
+      <span
+        class="input-error"
+        *ngIf="
+          contactForm.get('email').invalid && contactForm.get('email').touched
+        "
+        >invalid Email</span
+      >
+    </div>
+    <div class="form-group">
+      <textarea
+        type="text"
+        class="form-input form-block"
+        formControlName="message"
+        placeholder="Message"
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Send Message" />
+    </div>
+  </form>
+  <div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4260.779957202426!2d28.072139448757426!3d-26.10301209999794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9572d48fba75e9%3A0x6b548aac57374c7b!2sFCB!5e0!3m2!1sen!2sza!4v1529782687481"
+      width="100%"
+      height="450"
+      frameborder="0"
+      style="border:0"
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>

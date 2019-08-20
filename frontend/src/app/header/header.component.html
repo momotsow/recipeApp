@@ -1,0 +1,74 @@
+<header class="header">
+  <nav class="nav-bar">
+    <div class="nav-brand" routerLink="/">
+      <img src="../../assets/img/download.png" alt="HelloFood" width="5%" />
+      <span class="logo">HelloFood</span>
+    </div>
+    <div class="mobile-nav-button" (click)="mobileNavOpen = true">
+      <div class="menu">
+        Menu
+      </div>
+      <div class="nav-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="main-nav" [ngClass]="{ active: mobileNavOpen === true }">
+      <div class="navi" (click)="mobileNavOpen = false">
+        <!-- <i class="fa fa-times"></i> -->
+      </div>
+      <div class="mobile-nav-heading">
+        Menu
+      </div>
+      <ul class="nav-items">
+        <li>
+          <a
+            routerLink=""
+            [routerLinkActiveOptions]="{ exact: true }"
+            [routerLinkActive]="['active']"
+            (click)="mobileNavOpen = false"
+          >
+            Intro
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="/recipe"
+            [routerLinkActiveOptions]="{ exact: true }"
+            [routerLinkActive]="['active']"
+            (click)="mobileNavOpen = false"
+          >
+            Recipe
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="/contact"
+            [routerLinkActiveOptions]="{ exact: true }"
+            [routerLinkActive]="['active']"
+            (click)="mobileNavOpen = false"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="header-content">
+    <h1>Yummy</h1>
+    <p>
+      Want to impress at the dinner table? Let us, show you the way to making
+      meals memorable with mouth-watering recipes...
+    </p>
+
+    <button
+      type="button"
+      routerLink="/recipe"
+      [routerLinkActiveOptions]="{ exact: true }"
+      [routerLinkActive]="['active']"
+    >
+      Read More
+    </button>
+  </div>
+</header>

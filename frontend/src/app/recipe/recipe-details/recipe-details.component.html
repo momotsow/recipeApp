@@ -1,0 +1,16 @@
+<div class="details-container">
+  <span class="detailsImage">
+    <img [attr.src]="recipe?.image?.secure_url" alt="{{ recipe?.title }}" />
+  </span>
+  <div class="details">
+    <h2>{{ recipe?.title }}</h2>
+    <h4>INGREDIENTS</h4>
+    <p>{{ recipe?.ingredients }}</p>
+    <h4>DESCRIPTION</h4>
+    <p>{{ recipe?.description }}</p>
+  </div>
+
+  <div>
+    <button type="button" routerLink="/">Back</button>
+  </div>
+</div>

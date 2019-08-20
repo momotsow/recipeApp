@@ -1,0 +1,43 @@
+<div class="search">
+  <input
+    type="text"
+    class="form-input"
+    [(ngModel)]="searchText"
+    placeholder="Search here by Recipe Name"
+  />
+</div>
+
+<h1 class="text">The recipe!</h1>
+
+<p>
+  When planning the perfect meals and treats, we trust home-grown family recipes
+  passed on to us by some of our closest friends. Take a look…there’s a recipe
+  for every occasion. Keep your favourites, share them with family and friends,
+  and don’t forget to add a little something of your own… Nothing beats a secret
+  ingredient.<br><br>
+  Knife sharpened? Apron ready? Time to get creative in the kitchen with our
+  quick, easy and delicious recipes. From light lunches to indulgent desserts to
+  wholesome family favourites, your mealtime masterclass starts here.
+  <br><br>
+  Cant find the recipe you are looking for? just click on add it and it will be added.
+  Cooking has never been easier.
+</p>
+
+
+<div class="gallery-page">
+  <div class="grid-container">
+    <h1 class="text">Gallery</h1>
+
+    <div class="gallery-box">
+      <ul class="column">
+        <li *ngFor="let recipe of recipes | recipefilter: searchText">
+          <app-recipe-list [recipe]="recipe"></app-recipe-list>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="addbutton">
+    <button type="submit" routerLink="/addRecipe">Add recipe</button>
+  </div>
+</div>

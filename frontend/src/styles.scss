@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+// $ionicons-font-path: "~ionicons/dist/fonts";
+
+@import 'assets/scss/index';
+@import 'assets/scss/navbar.scss';
+@import 'assets/scss/fonts.scss';
+@import 'assets/scss/alert.scss';
+@import 'assets/scss/inputs';
+@import 'assets/scss/forms';
+@import 'assets/scss/buttons';
+
+
+
+
+
+// * {
+//   box-sizing: border-box;
+// }
+
+// body {
+//     margin: 0;
+//     height: 100vh;
+//     display: flex;
+//     font-family: 'Rakkas', cursive, 'Source Sans Pro', sans-serif;
+//     width: 100vw;
+// }
+
+h1,
+h2,
+h3 {
+    font-family: 'Rakkas', cursive;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
