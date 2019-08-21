@@ -21,6 +21,8 @@ import { EnquiryService } from './_core/services';
 import { AddRecipeComponent } from './recipe/add-recipe/add-recipe.component';
 
 import { RecipeFilterPipe } from './recipe/recipe-filter.pipe';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 
@@ -44,7 +46,8 @@ import { RecipeFilterPipe } from './recipe/recipe-filter.pipe';
     CoreModule,
     SharedModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [RecipeService, EnquiryService],
   bootstrap: [AppComponent]
