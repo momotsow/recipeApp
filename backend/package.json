@@ -10,7 +10,7 @@
     "dotenv": "4.0.0",
     "express-handlebars": "3.0.0",
     "express-session": "^1.16.2",
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.7.7",
     "keystone": "^4.1.0",
     "keystone-email": "^1.1.0",
     "lodash": "^4.17.15",
