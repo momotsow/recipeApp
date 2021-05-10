@@ -13,7 +13,7 @@
     "handlebars": "^4.1.2",
     "keystone": "^4.1.0",
     "keystone-email": "^1.1.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "multer": "^1.4.1",
     "nodemon": "^1.19.1",
